@@ -1,5 +1,9 @@
 # CRWN Clothing
 
+> Online e-commerce app built with React, Redux, Hooks, GraphQL, ContextAPI, Stripe, and Firebase where users can shop, browse, and buy the latest clothes.
+
+## Create-React-App
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
