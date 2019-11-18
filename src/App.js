@@ -10,7 +10,6 @@ import './App.css';
 
 import HomePage from './pages/homepage/homepage.component';
 import ShopPage from './pages/shop/shop.component';
-import ContactPage from './pages/contact/contact.component';
 import CheckoutPage from './pages/checkout/checkout.component';
 import SignInAndSignUpPage from './pages/sign-in-and-sign-up/sign-in-and-sign-up.component';
 import Header from './components/header/header.component';
@@ -58,7 +57,6 @@ class App extends React.Component {
               )
             }
           />
-          <Route path="/contact" component={ContactPage} />
         </Switch>
       </div>
     );
@@ -73,7 +71,4 @@ const mapDispatchToProps = dispatch => ({
   setCurrentUser: user => dispatch(setCurrentUser(user))
 });
 
-export default connect(
-  mapStateToProp,
-  mapDispatchToProps
-)(App);
+export default connect(mapStateToProp, mapDispatchToProps)(App);
