@@ -15,7 +15,7 @@ import './index.css';
 import App from './App';
 
 const httpLink = createHttpLink({
-  uri: 'https://crwn-clothing.com'
+  uri: 'https://localhost:3000/graphql'
 });
 
 const cache = new InMemoryCache();
@@ -30,7 +30,8 @@ const client = new ApolloClient({
 client.writeData({
   data: {
     cartHidden: true,
-    cartItems: []
+    cartItems: [],
+    itemCount: 0
   }
 });
 

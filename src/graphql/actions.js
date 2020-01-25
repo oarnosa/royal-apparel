@@ -18,6 +18,12 @@ export const GET_CART_ITEMS = gql`
   }
 `;
 
+export const GET_ITEM_COUNT = gql`
+  {
+    itemCount @client
+  }
+`;
+
 export const ADD_ITEM_TO_CART = gql`
   mutation AddItemToCart($item: Item!) {
     addItemToCart(item: $item) @client
