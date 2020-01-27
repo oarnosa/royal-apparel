@@ -15,7 +15,7 @@ import './index.css';
 import App from './App';
 
 const httpLink = createHttpLink({
-  uri: 'https://localhost:3000/graphql'
+  uri: 'https://www.crwn-clothing.com'
 });
 
 const cache = new InMemoryCache();
