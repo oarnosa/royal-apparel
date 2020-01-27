@@ -1,5 +1,6 @@
 import React from 'react';
 import { Mutation } from 'react-apollo';
+
 import { ADD_ITEM_TO_CART } from '../../graphql/actions';
 
 import CollectionItem from './collection-item.component';

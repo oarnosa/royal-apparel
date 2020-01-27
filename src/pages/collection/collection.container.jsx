@@ -1,5 +1,6 @@
 import React from 'react';
 import { Query } from 'react-apollo';
+
 import { GET_COLLECTION_BY_TITLE } from '../../graphql/actions';
 
 import CollectionPage from './collection.component';
@@ -10,9 +11,8 @@ const CollectionPageContainer = ({ match }) => (
     query={GET_COLLECTION_BY_TITLE}
     variables={{ title: match.params.collectionId }}
   >
-    {({ loading, data }) => {
+    {({ loading, data: { getCollectionsByTitle } }) => {
       if (loading) return <Spinner />;
-      const { getCollectionsByTitle } = data;
       return <CollectionPage collection={getCollectionsByTitle} />;
     }}
   </Query>

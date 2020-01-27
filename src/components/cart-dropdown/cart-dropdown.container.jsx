@@ -1,5 +1,6 @@
 import React from 'react';
 import { Query, Mutation } from 'react-apollo';
+
 import { TOGGLE_CART_HIDDEN, GET_CART_ITEMS } from '../../graphql/actions';
 
 import CartDropdown from './cart-dropdown.component';

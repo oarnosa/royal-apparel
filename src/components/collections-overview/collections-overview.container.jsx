@@ -1,5 +1,6 @@
 import React from 'react';
 import { Query } from 'react-apollo';
+
 import { GET_COLLECTIONS } from '../../graphql/actions';
 
 import CollectionsOverview from './collections-overview.component';
