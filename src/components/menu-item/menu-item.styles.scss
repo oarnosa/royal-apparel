@@ -1,12 +1,12 @@
 .menu-item {
   min-width: 30%;
-  height: 280px;
+  height: 250px;
   flex: 1 1 auto;
   display: flex;
   align-items: flex-end;
   justify-content: flex-end;
   border: 1px solid var(--secondary-color);
-  margin: 0 7.5px 15px;
+  margin: 0 10px 20px;
   overflow: hidden;
 
   &:hover {
@@ -20,7 +20,7 @@
   }
 
   &.large {
-    height: 480px;
+    height: 450px;
   }
 
   &:first-child {
