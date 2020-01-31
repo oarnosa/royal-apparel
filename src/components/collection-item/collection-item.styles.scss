@@ -43,7 +43,19 @@
 
     .name {
       width: 90%;
-      margin-bottom: 15px;
+      margin-bottom: 25px;
     }
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .collection-item {
+    width: 95%;
+    height: 325px;
+    margin: 5px 0 5px 0;
+  }
+  .collection-item .collection-footer {
+    font-size: 18px;
+    margin: 0 0 10px;
   }
 }

@@ -16,3 +16,17 @@
     justify-items: center;
   }
 }
+
+@media screen and (max-width: 800px) {
+  .collection-preview {
+    margin-bottom: 20px;
+  }
+  .collection-preview .title {
+    font-size: 30px;
+    align-self: center;
+    margin-bottom: 15px;
+  }
+  .collection-preview .preview {
+    grid-template-columns: 1fr 1fr;
+  }
+}
