@@ -7,3 +7,14 @@
     margin: 10px 0;
   }
 }
+
+@media screen and (max-width: 800px) {
+  .sign-up {
+    width: 100%;
+    margin-bottom: 30px;
+  }
+
+  .sign-up .heading {
+    text-align: center;
+  }
+}

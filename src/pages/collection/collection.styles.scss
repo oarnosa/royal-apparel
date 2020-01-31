@@ -11,9 +11,17 @@
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     justify-items: center;
+  }
+}
 
-    & .collection-item {
-      margin-bottom: 30px;
-    }
+@media screen and (max-width: 800px) {
+  .collection-page .title {
+    font-size: 30px;
+    align-self: center;
+    margin-bottom: 15px;
+  }
+
+  .collection-page .items {
+    grid-template-columns: 1fr 1fr;
   }
 }
