@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { lazy, Suspense } from 'react';
 import { Route } from 'react-router-dom';
 import { connect } from 'react-redux';
 
@@ -9,10 +9,13 @@ import {
 
 import { updateCollections } from '../../redux/shop/shop.actions';
 
+import Spinner from '../../components/spinner/spinner.component';
 import WithSpinner from '../../components/with-spinner/with-spinner.component';
 
-import CollectionsOverview from '../../components/collections-overview/collections-overview.component';
-import CollectionPage from '../collection/collection.component';
+const CollectionsOverview = lazy(() =>
+  import('../../components/collections-overview/collections-overview.component')
+);
+const CollectionPage = lazy(() => import('../collection/collection.component'));
 
 const CollectionsOverviewWithSpinner = WithSpinner(CollectionsOverview);
 const CollectionPageWithSpinner = WithSpinner(CollectionPage);
@@ -40,19 +43,21 @@ class ShopPage extends React.Component {
     const { loading } = this.state;
     return (
       <div className="shop-page">
-        <Route
-          exact
-          path={`${match.path}`}
-          render={props => (
-            <CollectionsOverviewWithSpinner isLoading={loading} {...props} />
-          )}
-        />
-        <Route
-          path={`${match.path}/:collectionId`}
-          render={props => (
-            <CollectionPageWithSpinner isLoading={loading} {...props} />
-          )}
-        />
+        <Suspense fallback={<Spinner />}>
+          <Route
+            exact
+            path={`${match.path}`}
+            render={props => (
+              <CollectionsOverviewWithSpinner isLoading={loading} {...props} />
+            )}
+          />
+          <Route
+            path={`${match.path}/:collectionId`}
+            render={props => (
+              <CollectionPageWithSpinner isLoading={loading} {...props} />
+            )}
+          />
+        </Suspense>
       </div>
     );
   }
