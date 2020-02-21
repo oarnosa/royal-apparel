@@ -7,6 +7,8 @@
 - [General info](#general-info)
 - [Deployment](#deployment)
 - [Technologies](#technologies)
+  - [Front-End](#front-end)
+  - [Back-End](#back-end)
 - [Setup](#setup)
 - [Features](#features)
 - [Status](#status)
@@ -14,7 +16,7 @@
 
 ## General info
 
-
+Royal Apparel is an online e-commerce store where users can browse, shop, and buy the latest clothes. It is predominantly built with React and Firebase and has gone through several iterations using different technologies. The main version of the application utilizes Redux for state management, the other versions include the use of Hooks and Context API, and another iteration utilizes GraphQL and Apollo. The purpose of this project was to work with different technologies to see how to handle state and passing props through Reacts unidirectional data flow. We utilized Firebase which is a Backend as a Service (BaaS) by Google to handle storing our data alogn with managing user authentication. Firebase makes it easy to implement sign in options with other service providers such as Google, Twitter, and Google to name a few. The integration of Stripe brings the entire site together as the items being browsed can be purchased with a test credit card included on the checkout page. Overall, this project really helped in building my understanding ofto develop a large app from end-to-end.
 
 ## Deployment
 
@@ -23,19 +25,23 @@ This app was deployed using Heroku and can be viewed at:
 
 ## Technologies
 
+### Front-End
+
 - React: v16.8.6
 - React-Router: v5.0.0
 - Redux: v4.0.1
 - Redux-Persist: v5.10.0
-- Node: v10.16.0
-- Stripe: v2.6.3
-- Firebase: v6.0.2
 - Sass: v4.12.0
-- GraphQl: v14.3.1
+- Reselect: v4.0.0
+
+### Back-End
+
+- Node: v10.16.0
+- Firebase: v6.0.2
 - Apollo: v2.5.6
 - Apollo-Boost: v0.4.2
-- Lodash: v4.17.15
-- Reselect: v4.0.0
+- GraphQl: v14.3.1
+- Stripe: v2.6.3
 
 ## Setup
 
@@ -57,14 +63,14 @@ When working with firebase ensure that in the `firebase.utils.js` file, the conf
 
 ```javascript
 const config = {
-  apiKey: "AIzaSyCqWnh8UT4plvXuL7HnQQtV4OsIjOVQPN4",
-  authDomain: "crwn-db-153b4.firebaseapp.com",
-  databaseURL: "https://crwn-db-153b4.firebaseio.com",
-  projectId: "crwn-db-153b4",
-  storageBucket: "crwn-db-153b4.appspot.com",
-  messagingSenderId: "675998441084",
-  appId: "1:675998441084:web:72a6bd7e8426196d8df3f9",
-  measurementId: "G-FHTZ6EP4FY"
+  apiKey: "",
+  authDomain: "",
+  databaseURL: "",
+  projectId: "",
+  storageBucket: "",
+  messagingSenderId: "",
+  appId: "",
+  measurementId: ""
 };
 ```
 
