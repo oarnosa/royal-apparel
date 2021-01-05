@@ -19,6 +19,10 @@
   "devDependencies": {
     "react-scripts": "3.0.0"
   },
+  "engines": {
+    "node": ">=10.0.0",
+    "npm": ">=6.0.0"
+  },
   "resolutions": {
     "babel-jest": "24.7.1"
   },
