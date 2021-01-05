@@ -2,17 +2,17 @@
   width: auto;
   height: 50px;
   letter-spacing: 0.5px;
-  padding: 0 35px 0 35px;
   font-size: 16px;
   color: var(--primary-color);
   background-color: var(--secondary-color);
   border: 1px solid var(--primary-color);
   text-transform: uppercase;
-  font-family: 'Open Sans Condensed';
+  font-family: "Open Sans Condensed";
   font-weight: bold;
   cursor: pointer;
   display: flex;
   justify-content: center;
+  align-items: center;
 
   &:focus {
     outline: none;
@@ -50,6 +50,5 @@
 @media screen and (max-width: 800px) {
   .custom-button {
     height: 40px;
-    padding: 0 15px 0 15px;
   }
 }
