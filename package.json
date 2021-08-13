@@ -1,29 +1,21 @@
 {
   "name": "royal-apparel",
   "version": "0.1.0",
-  "proxy": "http://localhost:5000",
-  "private": true,
   "dependencies": {
-    "firebase": "6.0.2",
-    "node-sass": "4.12.0",
-    "react": "^16.8.6",
-    "react-dom": "^16.8.6",
-    "react-redux": "7.0.3",
-    "react-router-dom": "5.0.0",
-    "react-stripe-checkout": "2.6.3",
-    "redux": "4.0.1",
-    "redux-logger": "3.0.6",
-    "redux-persist": "5.10.0",
-    "reselect": "4.0.0"
+    "firebase": "^8.9.1",
+    "node-sass": "^6.0.1",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "react-redux": "^7.2.4",
+    "react-router-dom": "^5.2.0",
+    "react-stripe-checkout": "^2.6.3",
+    "redux": "^4.1.1",
+    "redux-logger": "^3.0.6",
+    "redux-persist": "^6.0.0",
+    "reselect": "^4.0.0"
   },
   "devDependencies": {
-    "react-scripts": "3.0.0"
-  },
-  "engines": {
-    "node": "10.x"
-  },
-  "resolutions": {
-    "babel-jest": "24.7.1"
+    "react-scripts": "^4.0.3"
   },
   "scripts": {
     "start": "react-scripts start",
