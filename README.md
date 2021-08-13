@@ -20,8 +20,8 @@ Royal Apparel is an online e-commerce store where users can browse, shop, and bu
 
 ## Deployment
 
-This app was deployed using Heroku and can be viewed at:  
-[oarnosa-royal-apparel.herokuapp.com](https://oarnosa-royal-apparel.herokuapp.comm/)
+This app was deployed using Netlify and can be viewed at:  
+[oarnosa-royal-apparel.netlify.app](https://oarnosa-royal-apparel.netlify.app)
 
 ## Technologies
 
